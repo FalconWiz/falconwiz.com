@@ -1,4 +1,11 @@
+machine:
+  python:
+    version: 2.7.10
+
 dependencies:
+  pre:
+    - pip install --upgrade ansible
+    - if ! [ -f /home/ubuntu/bin/terraform ]; then wget https://releases.hashicorp.com/terraform/0.6.16/terraform_0.6.16_linux_amd64.zip && unzip terraform_0.6.16_linux_amd64.zip -d /home/ubuntu/bin; fi
   override:
     - chmod +x bin/*
     - ./bin/clean.sh
@@ -9,7 +16,6 @@ test:
   override:
     - ./bin/test.sh
   
-
 deployment:
   master:
     branch: [test, master]
