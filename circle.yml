@@ -14,4 +14,6 @@ deployment:
   master:
     branch: [test, master]
     commands:
+      - ./bin/inf.sh $CIRCLE_BRANCH
+      - ./bin/playbook.sh $CIRCLE_BRANCH
       - ./bin/deploy.sh $CIRCLE_BRANCH
