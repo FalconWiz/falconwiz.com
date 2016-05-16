@@ -5,5 +5,6 @@ resource "aws_instance" "master" {
     Name = "${var.zone_name}"
   }
   key_name = "${var.pubkey}"
+  security_groups = ["allow_web_traffic"]
 }
 
