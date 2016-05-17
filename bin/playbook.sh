@@ -8,4 +8,3 @@ if [ -z "$1" ]; then
 fi
 
 ansible-playbook -i inf/${1}/hosts playbooks/default.yml
-## ansible-playbook -i inf/${1}/hosts playbooks/index.yml --extra-vars "deploy_target=$1"
