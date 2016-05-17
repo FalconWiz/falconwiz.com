@@ -10,16 +10,15 @@ dependencies:
     - chmod +x bin/*
     - ./bin/clean.sh
     - ./bin/build.sh
-    - ./bin/test.sh
 
 test:
   override:
     - ./bin/test.sh
-  
+
 deployment:
   master:
     branch: [test, master]
     commands:
       - ./bin/inf.sh $CIRCLE_BRANCH
-      - ./bin/playbook.sh $CIRCLE_BRANCH
       - ./bin/deploy.sh $CIRCLE_BRANCH
+      - ./bin/playbook.sh $CIRCLE_BRANCH

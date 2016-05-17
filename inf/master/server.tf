@@ -7,4 +7,3 @@ resource "aws_instance" "master" {
   key_name = "${var.pubkey}"
   security_groups = ["allow_web_traffic"]
 }
-
