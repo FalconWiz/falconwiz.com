@@ -5,5 +5,7 @@
   become_method: sudo
   tasks:
     - apt: update_cache=yes
-    - name: Install nginx
+    - name: NGINX | Install nginx
       apt: name=nginx state=latest
+    - name: NGINX | Start nginx service
+      service: name=nginx state=started
