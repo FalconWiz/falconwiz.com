@@ -7,5 +7,7 @@
     - apt: update_cache=yes
     - name: NGINX | Install nginx
       apt: name=nginx state=latest
+    - name: Copy files from local to remote machine
+      unarchive: src=master.tar.gz dest=/usr/share/nginx/html copy=yes owner=root group=root mode=0644
     - name: NGINX | Start nginx service
       service: name=nginx state=started
