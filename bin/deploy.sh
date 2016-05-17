@@ -7,4 +7,4 @@ if [ -z "$1" ]; then
   exit
 fi
 
-tar -czvf ${1}.tar.gz _build
+tar -czvf ${1}.tar.gz -C _build .
