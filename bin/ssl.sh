@@ -1,2 +1,2 @@
 #!/bin/bash
-aws cp s3://falconwiz.com/SSL/*.pem .
+aws s3 cp s3://falconwiz.com/SSL/*.pem .
