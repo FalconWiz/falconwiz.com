@@ -1,0 +1,13 @@
+---
+- hosts: all
+  remote_user: ubuntu
+  become: yes
+  become_method: sudo
+  vars:
+    - site_name: falconwiz.com
+  tasks:
+    - include: tasks/apt-update.yml
+    - include: tasks/nginx-install.yml
+    - include: tasks/falconwiz.yml
+  handlers:
+    - include: handlers/nginx.yml

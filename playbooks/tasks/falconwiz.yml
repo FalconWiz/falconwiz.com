@@ -1,0 +1,13 @@
+---
+  - template: src=templates/nginx.conf dest=/etc/nginx/nginx.conf
+  - copy: src=./../{{ item }} dest=/etc/ssl/private/{{ item }} owner=www-data group=www-data mode=0600
+    with_items:
+      - fullchain.pem
+      - privkey.pem
+      - dhparams_4096.pem
+  - file: path=/var/www/{{ site_name }} state=directory mode=0755
+  - synchronize: src=./../_build/ dest=/var/www/{{ site_name }}/ delete=yes recursive=yes
+  - template: src=templates/falconwiz.conf dest=/etc/nginx/conf.d/falconwiz.conf
+    notify: restart nginx
+  #- name: FALCONWIZ | Copy and unzip archive to remote webroot
+  #  unarchive: src=../master.tar.gz dest=/usr/share/nginx/html copy=yes owner=root group=www-data mode=0755
