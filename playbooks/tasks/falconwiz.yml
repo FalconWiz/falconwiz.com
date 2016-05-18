@@ -6,8 +6,10 @@
       - privkey.pem
       - dhparams_4096.pem
   - file: path=/var/www/{{ site_name }} state=directory mode=0755
-  - synchronize: src=./../_build/ dest=/var/www/{{ site_name }}/ delete=yes recursive=yes
+  - unarchive: src=../master.tar.gz dest=/var/www/{{ site_name }} copy=yes owner=www-data group=www-data mode=0755
+  #- synchronize: src=./../_build/ dest=/var/www/{{ site_name }}/ delete=yes recursive=yes
   - template: src=templates/falconwiz.conf dest=/etc/nginx/conf.d/falconwiz.conf
-    notify: restart nginx
+    notify:
+      - restart nginx
   #- name: FALCONWIZ | Copy and unzip archive to remote webroot
-  #  unarchive: src=../master.tar.gz dest=/usr/share/nginx/html copy=yes owner=root group=www-data mode=0755
+  #  unarchive: src=../master.tar.gz dest=/usr/share/nginx/html copy=yes owner=www-data group=www-data mode=0755
