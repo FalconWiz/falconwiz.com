@@ -7,4 +7,4 @@ if [ -z "$1" ]; then
   exit
 fi
 
-ansible-playbook -i inf/${1}/hosts playbooks/master.yml
+ansible-playbook -i inf/${1}/hosts playbooks/${1}.yml
