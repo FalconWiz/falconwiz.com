@@ -7,3 +7,12 @@ variable "zone_id" {
 variable "pubkey" {
   default = "falconwiz_website"
 }
+variable "instance_name" {
+  default = "master"
+}
+variable "instance_ami" {
+  default = "ami-fce3c696"
+}
+variable "instance_type" {
+  default = "t2.micro"
+}
