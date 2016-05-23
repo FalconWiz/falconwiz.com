@@ -14,8 +14,6 @@ dependencies:
 test:
   override:
     - ./bin/preTest.sh
-  post:
-    - ./bin/postTest.sh
 
 deployment:
   master:
