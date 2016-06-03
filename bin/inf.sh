@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USAGE="./bin/inf.sh branch_name"
+USAGE="./bin/inf.sh deployment_group"
 
 if [ -z "$1" ]; then
   echo $USAGE

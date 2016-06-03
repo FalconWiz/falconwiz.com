@@ -1,3 +1,10 @@
 ---
   - name: APT | Update apt
     apt: update_cache=yes
+  - apt: name={{ item }} state=latest
+    with_items:
+      - bc
+      - git
+      - zip
+      - unzip
+      - docker.io

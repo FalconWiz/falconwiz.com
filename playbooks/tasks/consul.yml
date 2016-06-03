@@ -1,0 +1,14 @@
+---
+  - pip: name=docker-py
+  - name: consul server
+    docker:
+      name: consul
+      image: progrium/consul
+      state: started
+      ports:
+        - 8400:8400
+        - 8500:8500
+        - 8600:53/udp
+      volumes:
+        - /data
+      command: "-server -node {{ ansible_hostname }} -advertise {{ ansible_default_ipv4.address }} -bootstrap -ui-dir /ui"

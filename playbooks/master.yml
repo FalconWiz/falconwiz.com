@@ -9,5 +9,6 @@
     - include: tasks/apt-update.yml
     - include: tasks/nginx-install.yml
     - include: tasks/falconwiz.yml
+    - include: tasks/consul.yml
   handlers:
     - include: handlers/nginx.yml

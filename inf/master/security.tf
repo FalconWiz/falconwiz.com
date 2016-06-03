@@ -1,6 +1,6 @@
 resource "aws_security_group" "allow_web_traffic" {
   name = "allow_web_traffic"
-  description = "Allow HTTP and SSH connections from everyone"
+  description = "Allow HTTP and SSH connections, modified for topoform"
 
   ingress {
     from_port = 80
@@ -14,6 +14,20 @@ resource "aws_security_group" "allow_web_traffic" {
     to_port = 443
     protocol = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    from_port = 8400
+    to_port = 8500
+    protocol = "tcp"
+    cidr_blocks = ["104.154.43.21/32"]
+  }
+
+  ingress {
+    from_port = 8600
+    to_port = 8600
+    protocol = "udp"
+    cidr_blocks = ["104.154.43.21/32"]
   }
 
   ingress {
