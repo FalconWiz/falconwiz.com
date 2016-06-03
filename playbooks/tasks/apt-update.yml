@@ -8,3 +8,4 @@
       - zip
       - unzip
       - docker.io
+      - python-pip
