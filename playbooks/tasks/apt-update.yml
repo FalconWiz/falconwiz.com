@@ -7,4 +7,5 @@
       - git
       - zip
       - unzip
+      - python-pip
       - docker.io
