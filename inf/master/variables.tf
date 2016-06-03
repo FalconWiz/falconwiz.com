@@ -8,7 +8,7 @@ variable "pubkey" {
   default = "falconwiz_website"
 }
 variable "instance_ami" {
-  default = "ami-fce3c696"
+  default = "ami-13be557e"
 }
 variable "instance_type" {
   default = "t2.micro"
