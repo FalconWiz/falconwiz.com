@@ -5,5 +5,5 @@ resource "aws_instance" "master" {
     Name = "${var.zone_name}"
   }
   key_name = "${var.pubkey}"
-  security_groups = ["allow_web_traffic"]
+  vpc_security_group_ids = ["${aws_security_group.allow_web_traffic.id}"]
 }

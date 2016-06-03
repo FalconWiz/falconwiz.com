@@ -1,6 +1,6 @@
 resource "aws_security_group" "allow_web_traffic" {
   name = "allow_web_traffic"
-  description = "Allow HTTP and SSH connections, modified for topoform"
+  description = "Allow HTTP and SSH connections"
 
   ingress {
     from_port = 80
