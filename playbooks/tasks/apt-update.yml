@@ -8,4 +8,3 @@
       - zip
       - unzip
       - docker.io
-  - apt: upgrade=dist
