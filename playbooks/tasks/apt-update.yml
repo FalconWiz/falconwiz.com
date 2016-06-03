@@ -7,6 +7,5 @@
       - git
       - zip
       - unzip
-      - python-pip
       - docker.io
   - apt: upgrade=dist
