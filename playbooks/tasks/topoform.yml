@@ -1,3 +1,5 @@
 ---
   - name: DEBUG | Get public IP
-    debug: msg="{{ lookup('env','AWS_PUBLIC_IP') }} is the public IP of this server!"
+    debug: msg="{{ item) }} is the public IP of this server!"
+    with_lines:
+        - echo $AWS_PUBLIC_IP
