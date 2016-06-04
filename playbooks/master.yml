@@ -10,5 +10,6 @@
     - include: tasks/nginx-install.yml
     - include: tasks/falconwiz.yml
     - include: tasks/consul.yml
+    - include: tasks/topoform.yml
   handlers:
     - include: handlers/nginx.yml

@@ -1,0 +1,3 @@
+---
+  - name: DEBUG | Get public IP
+    - debug: msg="{{ lookup('env','AWS_PUBLIC_IP') }} is the public IP of this server!"
