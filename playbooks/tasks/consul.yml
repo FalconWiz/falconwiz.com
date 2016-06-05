@@ -13,4 +13,4 @@
         - 8600:8600
       volumes:
         - /data
-      command: "-server -node {{ ansible_hostname }} -advertise {{ ansible_default_ipv4.address }} -advertise-wan 52.201.225.154 -dc 'falconwiz-aws-us-east' -bootstrap -ui-dir /ui"
+      command: "-server -node {{ ansible_hostname }} -advertise {{ ansible_default_ipv4.address }} -advertise-wan {{ ansible_env.AWS_PUBLIC_IP }} -dc 'falconwiz-aws-us-east' -bootstrap -ui-dir /ui"
