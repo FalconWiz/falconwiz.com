@@ -1,3 +1,0 @@
----
-  - name: DEBUG | Get public IP
-    debug: msg="{{ ansible_env.AWS_PUBLIC_IP }} is the public IP of this server!"
