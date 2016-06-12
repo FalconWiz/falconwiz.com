@@ -2,5 +2,6 @@
 
 mkdir -p dist/
 npm install
+npm install -g webpack
 cp src/assets/favicon.ico dist/favicon.ico
-./node_modules/bin/webpack
+webpack
