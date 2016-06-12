@@ -483,13 +483,13 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     font-size: 68px;
   }
 }
-
-body {
-  font-family: 'Roboto'
+html {
+  position: relative;
+  min-height: 100%;
 }
-
 body {
   /* Margin bottom by footer height */
+  font-family: 'Roboto';
   margin-bottom: 60px;
 }
 
