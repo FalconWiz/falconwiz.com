@@ -1,0 +1,33 @@
+{
+  "parser": "babel-eslint",
+  "extends": "standard",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+    }
+  },
+  "rules": {
+    "react/jsx-uses-vars": 2,
+    "arrow-parens": 0,
+    "camelcase": 0,
+    "new-cap": 0
+  },
+  "plugins": [
+    "react"
+  ],
+  "settings": {
+    "react": {
+      "pragma": "React"
+    }
+  },
+  "globals": {
+    "React": false,
+    "ReactDOM": false,
+    "THREE": false,
+    "fetch": false,
+    "client": false,
+    "Modules": false,
+    "cookies": false
+  }
+}
