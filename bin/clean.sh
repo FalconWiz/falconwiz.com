@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -rf ./_build
+rm -rf ./dist
