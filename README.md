@@ -6,6 +6,7 @@ Website project that incorporates popular tech
 ##### Front End
 - [React](https://facebook.github.io/react/) (JS Library for building UI)
 - [Redux](http://redux.js.org/) (Predictable State)
+- [webpack](https://webpack.github.io/) (Module bundler)
 
 ##### Web Server
 - [Nginx](https://www.nginx.com/)
