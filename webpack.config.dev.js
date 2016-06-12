@@ -3,7 +3,9 @@ var webpack = require('webpack')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
+  devtool: 'source-map',
   entry: [
+    'webpack-hot-middleware/client',
     './src/index'
   ],
   output: {
@@ -11,6 +13,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new HtmlWebpackPlugin({
       title: 'FalconWiz.com',
