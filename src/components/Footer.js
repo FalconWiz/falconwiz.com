@@ -2,12 +2,13 @@ import React from 'react'
 
 class Footer extends React.Component {
   render () {
+    let date = new Date().getFullYear()
     return (
-      <footer className='footer'>
-         <div className='container'>
-           <p className='text-muted'>Neat, a footer.</p>
-         </div>
-      </footer>
+      <div className='mastfoot'>
+        <div className='inner'>
+          <p>&copy; FalconWiz {date}</p>
+        </div>
+      </div>
     )
   }
 }

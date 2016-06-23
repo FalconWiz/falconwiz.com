@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import { Router, Route } from 'react-router'
 import { Provider } from 'react-redux'
 import store, { history } from './store/configureStore'
+
 // react-router routes
 import injectTapEventPlugin from 'react-tap-event-plugin'
 import App from './containers/App'
