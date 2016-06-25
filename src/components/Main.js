@@ -1,8 +1,7 @@
 import React from 'react'
 
-import SiteWrapper from './SiteWrapper'
 import Header from './Header'
-import InnerCover from './InnerCover'
+import Jumbotron from './Jumbotron'
 import VideoPlayer from './VideoPlayer'
 import Footer from './Footer'
 
@@ -15,13 +14,13 @@ require('./../css/falconwiz.scss')
 class Main extends React.Component {
   render () {
     return (
-      <SiteWrapper>
+      <div>
         <Header />
-        <InnerCover>
+        <Jumbotron>
           <VideoPlayer />
-        </InnerCover>
+        </Jumbotron>
         <Footer />
-      </SiteWrapper>
+      </div>
     )
   }
 }
