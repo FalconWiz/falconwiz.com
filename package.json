@@ -43,6 +43,7 @@
     "html-webpack-plugin": "^2.20.0",
     "jquery": "^3.0.0",
     "node-sass": "^3.8.0",
+    "react-bootstrap": "^0.29.5",
     "react-router": "^2.4.1",
     "react-router-redux": "^4.0.5",
     "react-tap-event-plugin": "^1.0.0",
