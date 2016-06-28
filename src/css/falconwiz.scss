@@ -2,3 +2,12 @@
 $font-family-base: 'Roboto', sans-serif;
 
 @import "./../../node_modules/bootstrap/scss/bootstrap.scss";
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+  font-size: 10px;
+}

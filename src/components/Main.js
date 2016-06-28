@@ -1,8 +1,7 @@
 import React from 'react'
 
 import Header from './Header'
-import Jumbotron from './Jumbotron'
-import VideoPlayer from './VideoPlayer'
+import ReactPanel from './Panel'
 import Footer from './Footer'
 
 // Bootstrap / Style things
@@ -16,9 +15,7 @@ class Main extends React.Component {
     return (
       <div>
         <Header />
-        <Jumbotron>
-          <VideoPlayer />
-        </Jumbotron>
+        <ReactPanel />
         <Footer />
       </div>
     )
