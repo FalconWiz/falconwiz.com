@@ -5,7 +5,7 @@ class Header extends React.Component {
     return (
       <nav className='navbar navbar-static-top navbar-dark bg-inverse'>
         <a className='navbar-brand' href='#'>FalconWiz.com</a>
-        <ul className='nav navbar-nav navbar-right'>
+        <ul className='nav navbar-nav pull-xs-right'>
           <li className='nav-item'>
             <a className='nav-link' title='Email me!' href='mailto:andrew.hinett@gmail.com' target='_blank'><i className='fa fa-envelope-o fa-lg' aria-hidden='true'></i></a>
           </li>
