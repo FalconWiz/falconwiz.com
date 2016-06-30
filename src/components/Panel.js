@@ -9,8 +9,10 @@ class ReactPanel extends React.Component {
     return (
       <Panel
         onClick={this.handleClick.bind(this)}
+        bsStyle='primary'
+        header='This is the panel header! :3'
       >
-        This is a pretty neat panel
+        This is a pretty neat panel!
       </Panel>
     )
   }
