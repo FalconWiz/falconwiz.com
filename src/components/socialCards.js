@@ -9,7 +9,9 @@ const socialCards = Component({
             Github
           </CardTitle>
           <CardText>
-            <i className="fa fa-github-square fa-4x" aria-hidden="true"></i>
+            <a href="https://github.com/FalconWiz" target="_blank">
+              <i className="fa fa-github-square fa-4x" aria-hidden="true"></i>
+            </a>
           </CardText>
           <CardText>
             Check out my projects on Github!
@@ -20,10 +22,12 @@ const socialCards = Component({
             LinkedIn
           </CardTitle>
           <CardText>
-            <i className="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+            <a href="https://ca.linkedin.com/in/andrew-hinett" target="_blank">
+              <i className="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+            </a>
           </CardText>
           <CardText>
-            Peep my profile!
+            Join my professional network!
           </CardText>
         </Card>
         <Card block className="text-xs-center">
@@ -31,7 +35,9 @@ const socialCards = Component({
             Instagram
           </CardTitle>
           <CardText>
-            <i className="fa fa-instagram fa-4x" aria-hidden="true"></i>
+            <a href="https://www.instagram.com/hinett.a/" target="_blank">
+              <i className="fa fa-instagram fa-4x" aria-hidden="true"></i>
+            </a>
           </CardText>
           <CardText>
             Sometimes I take photos and put them here!
@@ -42,10 +48,12 @@ const socialCards = Component({
             Email
           </CardTitle>
           <CardText>
-            <i className="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
+            <a href="mailto:andrew.hinett@gmail.com" target="_blank">
+              <i className="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
+            </a>
           </CardText>
           <CardText>
-            Feel free to contact me via email!
+            Feel free to contact me about exciting opportunities!
           </CardText>
         </Card>
       </CardDeck>

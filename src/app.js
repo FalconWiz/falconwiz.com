@@ -1,19 +1,19 @@
-import { Render, Router, Route, IndexRoute, browserHistory } from 'jumpsuit'
+import { Render, Router, Route, IndexRoute } from 'jumpsuit'
 
 import Index from './containers/index'
 import About from './containers/about'
 import Home from './containers/home'
+import PageNotFound from './components/pageNotFound'
 // import Projects from './containers/projects'
-// import Resume from './containers/resume'
 
-// <Route path='projects' component={Projects} />
-// <Route path='resume' component={Resume} />
+import modal from 'state/modal'
 
-Render({}, (
-  <Router history={browserHistory}>
+Render({ modal}, (
+  <Router>
     <Route path='/' component={Index}>
       <IndexRoute component={Home} />
       <Route path='about' component={About} />
+      <Route path='*' component={PageNotFound} />
     </Route>
   </Router>
 ))

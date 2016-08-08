@@ -1,14 +1,13 @@
-// <div id="avatar" className="text-xs-center">
-//   <img src='images/andrew-circle.png' alt='andrew' class='img-circle'/>
-// </div>
-
 import { Component } from 'jumpsuit'
+import Avatar from './../components/avatar'
+import Bio from './../components/bio'
 
 const About = Component({
   render () {
     return (
-      <div>
-        This is pretty neat.
+      <div id='about'>
+        <Avatar />
+        <Bio />
       </div>
     )
   }
