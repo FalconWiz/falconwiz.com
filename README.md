@@ -22,3 +22,7 @@ Website project that incorporates popular current technology!
 - [Terraform](https://www.terraform.io/) (Infrastructure Provisioning)
 - [Ansible](https://www.ansible.com/) (Configuration Management)
 - [CircleCI](https://circleci.com/)
+
+##### Notes
+- Use `npm run watch` for live-reload development
+- Use `npm run build` to generate production-ready code in the `dist` directory
