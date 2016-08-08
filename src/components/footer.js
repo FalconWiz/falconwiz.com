@@ -1,7 +1,7 @@
-import React from 'react'
+import { Component } from 'jumpsuit'
 
-class Footer extends React.Component {
-  render () {
+const Footer = Component({
+  render() {
     let date = new Date().getFullYear()
     return (
       <footer>
@@ -9,6 +9,6 @@ class Footer extends React.Component {
       </footer>
     )
   }
-}
+})
 
 export default Footer

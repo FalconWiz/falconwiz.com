@@ -1,8 +1,0 @@
-{
-  "presets": ["es2016", "react"],
-  "env": {
-    "development": {
-      "presets": ["react-hmre"]
-    }
-  }
-}
