@@ -1,11 +1,15 @@
 .navbar {
   background-color: #FFFFFF;
   .navbar-brand {
-    color: #000000;
+    color: #373F51;
   }
   .nav-item {
     a {
-      color: #000000;
+      color: #373F51;
+      &:hover {
+        color: #0275d8;
+        box-shadow: inset 0 0px 0 white, inset 0 -1px 0 #373F51;
+      }
     }
   }
 }

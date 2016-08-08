@@ -12,3 +12,13 @@
 .card-deck-wrapper {
   padding: 1em;
 }
+
+.card-text {
+  a {
+    color: #373F51;
+    &:hover {
+      color: #0275d8;
+    }
+  }
+
+}
