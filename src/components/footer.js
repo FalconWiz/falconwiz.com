@@ -5,7 +5,9 @@ const Footer = Component({
     let date = new Date().getFullYear()
     return (
       <footer>
-        <p>&copy; FalconWiz {date}</p>
+        <p>
+          &copy; FalconWiz {date}
+        </p>
       </footer>
     )
   }
