@@ -18,7 +18,7 @@ const Resume = Component({
                   Google Drive Link
                 </CardTitle>
                 <CardText>
-                  <a href="https://drive.google.com/open?id=0B0AAc53wAuodY1dmRGhsV1Mya3c" target="_blank">
+                  <a href="https://drive.google.com/open?id=0B0AAc53wAuodTlZtSHJLbEh6R1U" target="_blank">
                     <i className="fa fa-google fa-4x" aria-hidden="true"></i>
                   </a>
                 </CardText>
