@@ -48,7 +48,6 @@ function buildStyles() {
         return reject(err)
       }
       fs.writeFile('app.css', res.css, function(err) {
-        console.log('it worked!')
         resolve(res.css.toString())
       })
     })
