@@ -6,7 +6,7 @@ const Footer = Component({
     return (
       <footer>
         <p>
-          &copy; FalconWiz {date}
+          &copy; {date} FalconWiz
         </p>
       </footer>
     )
