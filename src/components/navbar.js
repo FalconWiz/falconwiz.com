@@ -9,7 +9,7 @@ const NavBar = Component({
     return (
       <div>
         <Navbar full>
-          <NavbarBrand href="/">FalconWiz.com</NavbarBrand>
+          <NavbarBrand href="/">Andrew Hinett</NavbarBrand>
           <Nav className="pull-xs-right" navbar>
             <NavItem>
               <Link className="nav-link" to='/'>Home</Link>
