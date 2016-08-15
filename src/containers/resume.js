@@ -8,7 +8,7 @@ const Resume = Component({
     return (
       <Modal isOpen={this.props.modal} toggle={ () => ModalState.toggle() }>
         <ModalHeader toggle={ () => ModalState.toggle() }>
-          Resume Options
+          Résumé Options
         </ModalHeader>
         <ModalBody>
           <Row>
