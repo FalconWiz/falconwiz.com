@@ -18,9 +18,6 @@ const NavBar = Component({
               <Link className="nav-link" to='/about'>About</Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to='/projects'>Projects</Link>
-            </NavItem>
-            <NavItem>
               <a className='nav-link' onClick={() => ModalState.toggle()} href='#'>Resume</a>
             </NavItem>
           </Nav>
