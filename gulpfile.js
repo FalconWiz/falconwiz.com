@@ -73,7 +73,7 @@ function clientSass () {
 
 // Client Assets
 function clientAssets () {
-  return gulp.src('./src/assets/**/*')
+  return gulp.src('./src/client/assets/**/*')
     .pipe(gulp.dest('./dist/client/'))
     .pipe(clientSync.stream())
 }
