@@ -1,7 +1,6 @@
-import { Component } from 'jumpsuit'
-import { Button } from 'reactstrap'
+import React from 'react'
 
-const PageNotFound = Component({
+export default class PageNotFound extends React.Component {
   render () {
     return (
       <div id="pageNotFound">
@@ -18,6 +17,4 @@ const PageNotFound = Component({
       </div>
     )
   }
-})
-
-export default PageNotFound
+}

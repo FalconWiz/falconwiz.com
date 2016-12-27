@@ -1,6 +1,6 @@
-import { Component } from 'jumpsuit'
+import React from 'react'
 
-const Avatar = Component({
+export default class Avatar extends React.Component {
   render () {
     return (
       <div id="avatar" className="text-xs-center">
@@ -8,6 +8,4 @@ const Avatar = Component({
       </div>
     )
   }
-})
-
-export default Avatar
+}

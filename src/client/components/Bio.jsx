@@ -1,6 +1,6 @@
-import { Component } from 'jumpsuit'
+import React from 'react'
 
-const Bio = Component({
+export default class Bio extends React.Component {
   render () {
     return (
       <div id="bio">
@@ -13,6 +13,4 @@ const Bio = Component({
       </div>
     )
   }
-})
-
-export default Bio
+}

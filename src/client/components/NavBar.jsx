@@ -1,16 +1,15 @@
-import { Component, Link } from 'jumpsuit'
+import React from 'react'
+import { Link } from 'react-router'
 import { Navbar, NavbarBrand, Nav, NavItem } from 'reactstrap'
-import { LinkContainer } from 'react-router'
-import Resume from './../containers/resume'
-import ModalState from './../state/modal'
+import ResumeModal from './ResumeModal.jsx'
 
-const NavBar = Component({
-  render() {
+export default class NavBar extends React.Component {
+  render () {
     return (
       <div>
         <Navbar full>
           <NavbarBrand href="/">Andrew Hinett</NavbarBrand>
-          <Nav className="pull-xs-right" navbar>
+          <Nav className="pull-right" navbar>
             <NavItem>
               <Link className="nav-link" to='/'>Home</Link>
             </NavItem>
@@ -18,14 +17,12 @@ const NavBar = Component({
               <Link className="nav-link" to='/about'>About</Link>
             </NavItem>
             <NavItem>
-              <a className='nav-link' onClick={() => ModalState.toggle()} href='#'>Résumé</a>
+              <a className='nav-link' onClick={this.props.handleModalToggle} href='#'>Resume</a>
             </NavItem>
           </Nav>
         </Navbar>
-        <Resume />
+        <ResumeModal modalOpen={this.props.modalOpen} handleModalToggle={this.props.handleModalToggle}/>
       </div>
     )
   }
-})
-
-export default NavBar
+}

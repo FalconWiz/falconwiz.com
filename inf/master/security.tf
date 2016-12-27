@@ -17,13 +17,6 @@ resource "aws_security_group" "allow_web_traffic" {
   }
 
   ingress {
-    from_port = 8300
-    to_port = 8600
-    protocol = "tcp"
-    cidr_blocks = ["104.154.43.21/32"]
-  }
-
-  ingress {
     from_port = 22
     to_port = 22
     protocol = "tcp"

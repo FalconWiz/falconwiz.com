@@ -1,6 +1,7 @@
-import { Component } from 'jumpsuit'
-import { Card, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBlock, Container, Row, Col } from 'reactstrap'
-const socialCards = Component({
+import React from 'react'
+import { Card, CardTitle, CardText, CardDeck } from 'reactstrap'
+
+export default class SocialCards extends React.Component {
   render () {
     return (
       <CardDeck>
@@ -59,6 +60,4 @@ const socialCards = Component({
       </CardDeck>
     )
   }
-})
-
-export default socialCards
+}

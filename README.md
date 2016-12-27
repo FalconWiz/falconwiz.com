@@ -6,9 +6,7 @@ Website project that incorporates popular current technology!
 [![built with jumpsuit](https://img.shields.io/badge/built%20with-jumpsuit-3A54AD.svg)](https://github.com/jumpsuit/jumpsuit)
 
 ##### Front End
-- [Jumpsuit](https://github.com/jumpsuit/jumpsuit) (Fastest way to write scalable React/Redux!)
 - [React](https://facebook.github.io/react/) (JS Library for building UI)
-- [Redux](http://redux.js.org/) (Predictable State)
 - [webpack](https://webpack.github.io/) (Module bundler)
 - [Bootstrap v4](http://v4-alpha.getbootstrap.com/) (Styles)
 
@@ -24,5 +22,5 @@ Website project that incorporates popular current technology!
 - [CircleCI](https://circleci.com/)
 
 ##### Notes
-- Use `npm run watch` for live-reload development
+- Use `npm run dev` for live-reload development
 - Use `npm run build` to generate production-ready code in the `dist` directory

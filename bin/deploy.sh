@@ -7,4 +7,4 @@ if [ -z "$1" ]; then
   exit
 fi
 
-tar -czvf ${1}.tar.gz -C dist .
+tar -czvf ${1}.tar.gz -C dist/client .

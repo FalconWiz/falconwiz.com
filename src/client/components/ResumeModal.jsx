@@ -1,14 +1,16 @@
-import { Component, Link } from 'jumpsuit'
 import React from 'react'
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Card, CardTitle, CardText, Row, Col } from 'reactstrap'
-import ModalState from './../state/modal'
 
-const Resume = Component({
-  render() {
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Card, CardTitle, CardText, Row, Col } from 'reactstrap'
+
+export default class ResumeModal extends React.Component {
+  handleModalToggle = () => {
+    this.props.handleModalToggle()
+  }
+  render () {
     return (
-      <Modal isOpen={this.props.modal} toggle={ () => ModalState.toggle() }>
-        <ModalHeader toggle={ () => ModalState.toggle() }>
-          Résumé Options
+      <Modal isOpen={this.props.modalOpen} toggle={ this.props.handleModalToggle }>
+        <ModalHeader toggle={ this.props.handleModalToggle }>
+          Resume Options
         </ModalHeader>
         <ModalBody>
           <Row>
@@ -39,15 +41,11 @@ const Resume = Component({
           </Row>
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={ () => ModalState.toggle() }>
+          <Button color="primary" onClick={ this.props.handleModalToggle }>
             Close
           </Button>
         </ModalFooter>
       </Modal>
     )
   }
-}, (state) => ({
-  modal: state.modal.open
-}))
-
-export default Resume
+}

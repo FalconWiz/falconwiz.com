@@ -1,6 +1,6 @@
-import { Component } from 'jumpsuit'
+import React from 'react'
 
-const Titles = Component({
+export default class Titles extends React.Component {
   render () {
     return (
       <div id="titles" className="text-xs-center">
@@ -8,6 +8,4 @@ const Titles = Component({
       </div>
     )
   }
-})
-
-export default Titles
+}

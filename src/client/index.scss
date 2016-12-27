@@ -1,13 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 $font-family-base: 'Roboto', sans-serif;
 
-@import "./../node_modules/bootstrap/scss/bootstrap-flex.scss";
+@import "./../../node_modules/bootstrap/scss/bootstrap-flex.scss";
 @import "./styles/navbar.scss";
 @import "./styles/footer.scss";
 @import "./styles/about.scss";
 @import "./styles/home.scss";
 @import "./styles/pageNotFound.scss";
-@import "./styles/resume.scss";
 
 body {
   background-color: #373F51;
