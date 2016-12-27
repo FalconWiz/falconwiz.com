@@ -11,7 +11,7 @@ variable "instance_ami" {
   default = "ami-9dcfdb8a"
 }
 variable "instance_type" {
-  default = "t2.micro"
+  default = "t2.nano"
 }
 variable "aws_region" {
   default = "us-east-1"
