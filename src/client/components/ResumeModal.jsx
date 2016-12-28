@@ -41,7 +41,7 @@ export default class ResumeModal extends React.Component {
           </Row>
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={ this.props.handleModalToggle }>
+          <Button color="primary" onClick={ this.props.handleModalToggle } id='customButton'>
             Close
           </Button>
         </ModalFooter>

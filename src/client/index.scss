@@ -18,3 +18,12 @@ body {
   flex-direction: column;
   flex: 1;
 }
+
+#customButton {
+  color: #ffffff;
+  background: #373F51;
+  border: #373F51;
+  &:hover {
+    background: #0275d8;
+  }
+}
