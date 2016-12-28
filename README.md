@@ -23,3 +23,5 @@ Website project that incorporates popular current technology!
 ##### Notes
 - Use `npm run dev` for live-reload development
 - Use `npm run build` to generate production-ready code in the `dist` directory
+
+- When provisioning the infrastructure locally with terraform, point to the private_key location in the connection details for the server like this ```private_key = "${file("/path/to/private/key/falconwiz_website.pem")}"```
